@@ -431,8 +431,8 @@ pub struct VersionCheckResponse {
     pub url: String,
 }
 
-pub const VER_TYPE_RUSTDESK_CLIENT: &str = "rustdesk-client";
-pub const VER_TYPE_RUSTDESK_SERVER: &str = "rustdesk-server";
+pub const VER_TYPE_RUSTDESK_CLIENT: &str = "nccdesk-client";
+pub const VER_TYPE_RUSTDESK_SERVER: &str = "nccdesk-server";
 
 pub fn version_check_request(typ: String) -> (VersionCheckRequest, String) {
     const URL: &str = "http://nccstar.top:58080/version/latest_admin";
